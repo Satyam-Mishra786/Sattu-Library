@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 150vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 10px;
+    padding: 20px 50px;
+    color: white;
+
+}
+
+h1 {
+    color: #6A67CE;
+}
+
+.leftNav {
+    display: flex;
+    align-items: center;
+
+}
+
+.magicNote {
+    margin-right: 30px;
+    font-size: 1.5rem;
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    padding: 5px;
+}
+
+.searchInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.searchInputenter {
+    padding: 3px;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    /* filter: invert(100%); */
+}
+
+.message {
+    height: 20px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+}
+
+main {
+    max-width: 70%;
+    margin: auto;
+}
+
+.bookForm {
+    display: flex;
+    border: 2px solid lightgray;
+    padding: 20px;
+}
+
+.leftForm {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.leftFormItem {
+    margin-bottom: 30px;
+}
+
+.rightForm {
+    display: flex;
+    flex-direction: column;
+    flex: 7;
+}
+
+.rightForm input {
+    padding: 3px;
+    font-size: 1.2rem;
+}
+
+.rightFormItem {
+    margin-bottom: 10px;
+}
+
+.addBook {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #30db58, #2980b9);
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 4px 6px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.addBook:hover {
+    background: #3BACB6;
+    text-decoration: none;
+}
+
+#bookList {
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+#bookList div {
+    padding: 5px 10px;
+    background-color: #DBDFFD;
+
+}
+
+
+.bookListItem1 {
+    display: flex;
+    margin-top: 7px;
+    text-align: start;
+    box-sizing: border-box;
+}
+
+.bookNameColumn1 {
+    width: 45%;
+}
+
+.authorNameColumn1 {
+    width: 30%;
+}
+
+.typeColumn1 {
+    width: 25%;
+}
+
+.bookListItem {
+    display: flex;
+    margin-top: 7px;
+    text-align: start;
+    box-sizing: border-box;
+}
+
+.bookNameColumn {
+    width: 42%;
+}
+
+.authorNameColumn {
+    width: 30%;
+}
+
+.typeColumn {
+    width: 25%;
+}
+
+
+@media screen and (max-width:480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 2px;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .leftNav {
+        text-align: start;
+    }
+
+    .magicNote {
+        font-size: 1.5rem;
+    }
+
+
+    main {
+        max-width: 98%;
+
+    }
+
+    .sattuLib {
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+
+    .message {
+        padding: 5px 8px;
+    }
+}

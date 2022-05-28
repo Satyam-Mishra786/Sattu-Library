@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="img/book1.jpg">
+    <title>Sattu Library</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="leftNav">
+            <h2 class="magicNote">Sattu Library</h2>
+            <div class="home">Home</div>
+        </div>
+
+        <div class="rightNav">
+            <div class="searchInput">
+                <input class="searchInputenter" type="search" placeholder="Search...">
+                <img src="./img/search.png" class="searchIcon" alt="">
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="messageBox">
+    </div>
+
+    <main>
+        <h1 class="sattuLib">Sattu Library</h1>
+        <form action="" class="form">
+            <div class="bookForm">
+                <div class="leftForm">
+                    <label class="leftFormItem" for="bookName">Name</label>
+                    <label class="leftFormItem" for="author">Author</label>
+                    <label class="leftFormItem" for="type">Type</label>
+                </div>
+                <div class="rightForm">
+                    <input class="rightFormItem" type="text" class="input" id="bookName" name="bookName"
+                        placeholder="Book Name">
+                    <input class="rightFormItem" type="text" class="input" id="author" name="author"
+                        placeholder="Author">
+                    <div class="rightFormItem" id="radioDiv">
+                        <div class="Fiction">
+                            <input type="radio" id="Fiction" name="type" value="Fiction">
+                            <label for="Fiction">Fiction</label>
+                        </div>
+                        <div class="Programming">
+                            <input type="radio" name="type" id="Programming" value="Programming">
+                            <label for="Programming">Programming</label>
+                        </div>
+                        <div class="Cooking">
+                            <input type="radio" id="Cooking" name="type" value="Cooking">
+                            <label for="Cooking">Cooking</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="addBook">Add Book</button>
+        </form>
+
+
+        <hr style="margin-top: 20px;">
+
+        <div class="bookList" id="bookList">
+            <div class="bookListItem1">
+                <div class="bookNameColumn1">Name</div>
+                <div class="authorNameColumn1">Author</div>
+                <div class="typeColumn1">Type/Category</div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
